@@ -18,6 +18,15 @@
  * Lists the calendars shown in the user's calendar list.
  * @see https://developers.google.com/calendar/api/v3/reference/calendarList/list
  */
+
+function setViewTo10Days() {
+
+  var calendarApp = CalendarApp;
+
+  calendarApp.setView(calendarApp.getView(), { range: '10d' });
+
+}
+
 function listCalendars() {
   let calendars;
   let pageToken;
